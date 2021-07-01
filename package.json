@@ -1,7 +1,7 @@
 {
-  "name": "tailwind-starter",
+  "name": "insurance-broker-template",
   "version": "1.0.0",
-  "description": "Starter for projects using Tailwind.css",
+  "description": "Template for insurance broker websites",
   "author": "Ivan Malenica",
   "private": true,
   "scripts": {

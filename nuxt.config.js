@@ -4,14 +4,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Tailwind + nuxt starter',
+    title: 'Insurance broker template',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Tailwind + nuxt starter',
+        content: 'Insurance broker',
       },
       {
         hid: 'keywords',
@@ -48,7 +48,7 @@ export default {
         rel: 'stylesheet preload prefetch',
         as: 'style',
         href:
-          'https://fonts.googleapis.com/css?family=Mulish:400,500,600,700,800,900&amp;subset=latin', // font goes here
+          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap',
         type: 'text/css',
         crossorigin: 'anonymous',
       },
