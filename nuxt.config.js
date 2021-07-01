@@ -1,59 +1,109 @@
-
 export default {
-  mode: 'spa',
+  target: 'static',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Tailwind + nuxt starter',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Tailwind + nuxt starter',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          '',
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: '',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: '',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: '',
+      },
+      {
+        hid: 'twitter:description',
+        property: 'twitter:description',
+        content: '',
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'shortcut icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/android-chrome-192x192.png' },
+      {
+        rel: 'stylesheet preload prefetch',
+        as: 'style',
+        href:
+          'https://fonts.googleapis.com/css?family=Mulish:400,500,600,700,800,900&amp;subset=latin', // font goes here
+        type: 'text/css',
+        crossorigin: 'anonymous',
+      },
+    ],
+  },
+  components: {
+    dirs: ['~/components', '~/components/shared'],
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: ['@nuxtjs/tailwindcss'],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-  ],
+   ** Nuxt.js modules
+   */
+  modules: [],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
+        })
+      }
     },
-    babel:{
-      plugins: [
-        ['@babel/plugin-proposal-private-methods', { loose: true }]
-      ]
-    }  
+    extractCSS: true,
+    babel: {
+      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
+    },
   },
   tailwindcss: {
-    jit: true
-  }
+    jit: true,
+  },
+  publicRuntimeConfig: {
+    baseURL: process.env.URL || "http://localhost:3000/"
+  },
 }

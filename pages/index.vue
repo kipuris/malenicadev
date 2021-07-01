@@ -54,7 +54,7 @@
             class="lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-y-1/2 lg:-translate-x-1/2"
           >
             <a class="text-white text-3xl font-bold leading-none" href="#"
-              >Insure.hr</a
+              >Brand</a
             >
           </div>
           <a
@@ -87,7 +87,7 @@
         >
           <div class="flex items-center mb-8">
             <a class="mr-auto text-3xl font-bold leading-none" href="#"
-              >Insure.hr</a
+              >Brand</a
             >
             <button class="navbar-close">
               <svg
@@ -198,7 +198,11 @@
           </div>
           <div class="mb-8 flex flex-wrap rounded-lg shadow overflow-hidden">
             <div class="w-full lg:w-1/2 rounded-l">
-              <img class="object-cover" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80" alt="" />
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=968&amp;q=80"
+                alt=""
+              />
             </div>
             <div class="w-full lg:w-1/2 py-6 lg:pt-10 px-6 rounded-r bg-white">
               <span class="text-sm text-gray-400">24 Jan, 2021</span>
@@ -415,42 +419,42 @@ export default {
   mounted() {
     // Burger menus
     // open
-    const burger = document.querySelectorAll(".navbar-burger");
-    const menu = document.querySelectorAll(".navbar-menu");
+    const burger = document.querySelectorAll('.navbar-burger')
+    const menu = document.querySelectorAll('.navbar-menu')
 
     if (burger.length && menu.length) {
-      for (var i = 0; i < burger.length; i++) {
-        burger[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
+      for (let i = 0; i < burger.length; i++) {
+        burger[i].addEventListener('click', function () {
+          for (let j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle('hidden')
           }
-        });
+        })
       }
     }
 
     // close
-    const close = document.querySelectorAll(".navbar-close");
-    const backdrop = document.querySelectorAll(".navbar-backdrop");
+    const close = document.querySelectorAll('.navbar-close')
+    const backdrop = document.querySelectorAll('.navbar-backdrop')
 
     if (close.length) {
-      for (var i = 0; i < close.length; i++) {
-        close[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
+      for (let i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', function () {
+          for (let j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle('hidden')
           }
-        });
+        })
       }
     }
 
     if (backdrop.length) {
-      for (var i = 0; i < backdrop.length; i++) {
-        backdrop[i].addEventListener("click", function () {
-          for (var j = 0; j < menu.length; j++) {
-            menu[j].classList.toggle("hidden");
+      for (let i = 0; i < backdrop.length; i++) {
+        backdrop[i].addEventListener('click', function () {
+          for (let j = 0; j < menu.length; j++) {
+            menu[j].classList.toggle('hidden')
           }
-        });
+        })
       }
     }
   },
-};
+}
 </script>

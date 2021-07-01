@@ -71,6 +71,8 @@ typings/
 # Nuxt generate
 dist
 
+tmpnodejsnpm-cache
+
 # vuepress build output
 .vuepress/dist
 
