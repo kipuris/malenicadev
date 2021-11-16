@@ -4,14 +4,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Insurance broker template',
+    title: 'malenica.dev',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Insurance broker',
+        content: 'malenica.dev',
       },
       {
         hid: 'keywords',
@@ -48,7 +48,7 @@ export default {
         rel: 'stylesheet preload prefetch',
         as: 'style',
         href:
-          'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap',
+          'https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap',
         type: 'text/css',
         crossorigin: 'anonymous',
       },

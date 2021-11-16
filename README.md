@@ -1,6 +1,6 @@
 # tailwind-starter
 
-> Starter for projects using Tailwind.css
+> Professional portfolio website using Nuxt.js & Tailwind.css
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
