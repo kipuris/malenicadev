@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20 bg-gray-800">
+  <section class="pb-20 bg-gray-900">
     <div class="relative container px-4 pt-12 md:pt-20 mx-auto">
       <div class="flex flex-wrap items-center -mx-4 mb-20 2xl:mb-14">
         <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">

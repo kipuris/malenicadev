@@ -193,9 +193,9 @@ module.exports = {
       'gradient-to-tl':
         'linear-gradient(to top left, var(--tw-gradient-stops))',
       'gradient-zospace-1':
-        'linear-gradient(180deg, rgba(20, 20, 22, 0.9) 29.21%, rgba(0, 10, 255, 0.72) 75.43%)',
+        'linear-gradient(180deg, rgba(23, 25, 35, 0.9) 29.21%, rgba(74, 85, 104, 0.72) 75.43%)',
       'gradient-zospace-2':
-        'linear-gradient(178.46deg, rgba(26, 104, 130, 0) 17.98%, #FF9A3D 38.85%, #FFBE38 40.3%, #4827A5 74.77%)',
+        'linear-gradient(178.46deg, rgba(23, 25, 35, 0) 17.98%, #4A5568 38.85%, #1A202C 40.3%, #1A202C 74.77%)',
     },
     backgroundOpacity: (theme) => theme('opacity'),
     backgroundPosition: {
@@ -252,6 +252,8 @@ module.exports = {
       none: 'none',
       'glow-yellow': '0 0 20px rgba(249, 115, 22,.5)',
       'glow-yellow-intense': '0 0 30px 10px rgba(234, 88, 12,.5)',
+      'glow-pink': '0 0 20px rgba(209, 59, 245,.5)',
+      'glow-pink-intense': '0 0 30px 10px rgba(158, 8, 194,.5)',
     },
     container: {},
     cursor: {

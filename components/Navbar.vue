@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-800">
+  <header class="bg-gray-900">
     <nav class="relative">
       <div class="flex py-8 px-4 lg:px-8 justify-between items-center">
         <a class="text-2xl text-whiteAlpha-900 font-bold" href="#">
